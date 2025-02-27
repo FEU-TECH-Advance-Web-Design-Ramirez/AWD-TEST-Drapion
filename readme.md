@@ -61,6 +61,7 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
+Mental Health Advocate
 Guiding Question:
 - What is the project
 - Whats the purpose
