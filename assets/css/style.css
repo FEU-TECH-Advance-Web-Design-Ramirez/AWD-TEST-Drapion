@@ -252,12 +252,34 @@
   backdrop-filter: blur(10px);
   color: #F1F0E8;
   border: none;
+  width: 220px; /* Fixed width */
+  height: 150px; /* Fixed height */
 }
+
+/* Ensure proper layout */
+.stats-group {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-group {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .hero-section .card {
+    width: -50%;
+    height: -50%;
+  }
+}
+
+
 
 .hero-section .card h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #00b0dc;
+  color: #6096BA;
 }
 
 .hero-section .card p {
@@ -280,6 +302,7 @@
     height: auto;
     padding: 3rem 1rem;
   }
+  
 }
 
 @media (max-width: 767px) {
@@ -356,26 +379,73 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 1200px;
-  margin: auto;
-  max-width: 90%;
-  transition: transform 1s;
+.content-section-1 {
+  background: url(../img/contentSection1BG.png) no-repeat center center/contain;
+  position: relative; /* Ensures child elements are positioned relative to this section */
+  padding-bottom: 8rem;
+  color: #F1F0E8;
+  background-color: #E7ECEF;
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Helps with centering */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.demo-btn {
-background-color: #274C77;
-color: #F1F0E8;
-font-size: 14px;
-padding: 8px 20px;
-border-radius: 50px;
-transition: 0.3s background-color;
-font-weight: 500;
-border: 1px solid var(--fc-border-color);
-align-items: center;
+.content-section-1 .container {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  position: relative; /* Changed from absolute to relative for better control */
+  padding: 2rem;
+  margin-top: 150px;
 }
 
-.demo-btn:hover {
-background-color: #F1F0E8;
-color: #274C77;
+.bookAppointment2 {
+  padding: 10px 20px;
+  background-color: #274C77;
+  color: #F1F0E8;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block; /* Ensures proper margin behavior */
+  margin-top: 10px; /* Adjust as needed */
+  text-decoration: none;
+}
+
+.bookAppointment2:hover{
+  background-color: #F1F0E8;
+  color: #274C77;
+}
+
+@media (max-width: 991px) {
+  .content-section-1 {
+    background: none; /* Removes background image on smaller screens */
+    color: #274C77;
+    background-color: #E7ECEF;
+  }
+
+  .content-section-1 .container {
+    text-align: center; /* Center text content on smaller screens */
+    left: 0;
+    padding: 1rem;
+    margin-top: 0px;
+  }
+
+  .content-section-2{
+    background-color: #6c757d;
+  }
+}
+
+.content-section-2{
+  background-color: #E7ECEF;
+}
+
+.content-section-2 h2{
+  color: #274C77;
+}
+
+.content-section-2 .card{
+  border-radius: 30px;
 }
