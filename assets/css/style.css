@@ -252,12 +252,34 @@
   backdrop-filter: blur(10px);
   color: #F1F0E8;
   border: none;
+  width: 220px; /* Fixed width */
+  height: 150px; /* Fixed height */
 }
+
+/* Ensure proper layout */
+.stats-group {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-group {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .hero-section .card {
+    width: -50%;
+    height: -50%;
+  }
+}
+
+
 
 .hero-section .card h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #00b0dc;
+  color: #6096BA;
 }
 
 .hero-section .card p {
@@ -280,6 +302,7 @@
     height: auto;
     padding: 3rem 1rem;
   }
+  
 }
 
 @media (max-width: 767px) {
@@ -363,19 +386,28 @@ a {
   transition: transform 1s;
 }
 
-.demo-btn {
-background-color: #274C77;
-color: #F1F0E8;
-font-size: 14px;
-padding: 8px 20px;
-border-radius: 50px;
-transition: 0.3s background-color;
-font-weight: 500;
-border: 1px solid var(--fc-border-color);
-align-items: center;
+.content-section-1 {
+  position: relative; /* Ensures child elements are positioned relative to this section */
+  padding-bottom: 8rem;
+  color: #274C77;
+  background-color: #E7ECEF;
 }
 
-.demo-btn:hover {
-background-color: #F1F0E8;
-color: #274C77;
+
+
+.content-section-1 img{
+  width: auto;
+  max-width: 100%; /* Ensures responsiveness */
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+
+.content-section-2{
+  background: url(../img/empathBG2.png) no-repeat center center/cover;
+}
+
+.content-section-2 h2{
+  color: #F1F0E8;
 }
