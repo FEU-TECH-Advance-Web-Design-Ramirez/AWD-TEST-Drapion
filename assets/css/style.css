@@ -1,3 +1,7 @@
+*{
+  font-family: Poppins, sans-serif;
+}
+
 .navbar {
   background-color: transparent;
   height: 80px;
@@ -245,15 +249,16 @@
 
 /* Styling Bootstrap Cards for Stats */
 .hero-section .card {
-  background: rgba(255, 255, 255, 0.1);
+  background-color: #f4f8fd1a;
   border-radius: 15px;
-  padding: 1rem;
+  padding: 16px 33px;
   text-align: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   color: #F1F0E8;
   border: none;
-  width: 220px; /* Fixed width */
-  height: 150px; /* Fixed height */
+  width: 220px;
+  height: 150px;
+  justify-content: center;
 }
 
 /* Ensure proper layout */
