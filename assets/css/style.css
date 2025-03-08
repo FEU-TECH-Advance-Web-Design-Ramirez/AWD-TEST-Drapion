@@ -441,7 +441,11 @@ a {
   }
 
   .content-section-2{
-    background-color: #6c757d;
+    background: url(../img/empathBG2.png) no-repeat center center/cover;
+  }
+
+  .content-section-2 h2{
+    color: #F1F0E8;
   }
 }
 
