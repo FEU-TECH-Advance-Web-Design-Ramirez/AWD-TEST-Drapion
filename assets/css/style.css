@@ -2,6 +2,8 @@
   font-family: Poppins, sans-serif;
 }
 
+/* ====== Navigation Bar ====== */
+
 .navbar {
   background-color: transparent;
   height: 80px;
@@ -35,21 +37,21 @@
 }
 
 .navbar.scrolled {
-  background-color: #89A8B2; /* Change this color as needed */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  background-color: #89A8B2;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.scrolled .nav-link {
-  color: #F1F0E8; /* Change link color when scrolled */
+  color: #F1F0E8;
 }
 
 .navbar.scrolled .nav-link.active {
-  color: #274C77; /* Active link color when scrolled */
+  color: #274C77;
 }
 
 .navbar.scrolled .nav-link:hover, 
 .navbar.scrolled .nav-link.active:hover {
-  color: #274C77; /* Hover color when scrolled */
+  color: #274C77;
 }
 
 .nav-link {
@@ -68,27 +70,24 @@
   color: #B3C8CF;
 }
 
-/* Ensure only text (not dropdown arrow) gets underlined */
 .nav-link.dropdown-toggle {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-/* Apply underline ONLY to the text inside the dropdown */
 .nav-link.dropdown-toggle span:hover::after {
   content: "";
   display: block;
   position: absolute;
   height: 1.3px;
   width: 100%;
-  background-color: #F1F0E8; /* Change color as needed */
+  background-color: #F1F0E8;
   bottom: -2px;
   left: 0;
   transition: width 0.3s ease-in-out;
 }
 
-/* Keep underline for non-dropdown links */
 .nav-link:not(.dropdown-toggle):hover::after {
   content: "";
   display: block;
@@ -105,8 +104,6 @@
   background-color: #89A8B2;
 }
 
-
-
 @media (min-width: 991px) {
   .nav-link:hover::before, .nav-link.active:hover::before {
       width: 100%;
@@ -119,7 +116,7 @@
       padding: 0.5rem 0.5rem;
       height: auto;
       display: flex;
-      justify-content: center; /* or space-between */
+      justify-content: center;
       align-items: center;
   }
   .navbar-brand {
@@ -194,6 +191,8 @@
   color: #274C77;
 }
 
+/* ====== Hero Section ====== */
+
 .hero-section {
   background: url(../img/empathHeroSectionBG.png) no-repeat center center/cover;
   width: 100%;
@@ -249,7 +248,6 @@
   margin-bottom: 1rem;
 }
 
-/* Styling Bootstrap Cards for Stats */
 .hero-section .card {
   background-color: #f4f8fd1a;
   border-radius: 15px;
@@ -263,13 +261,11 @@
   justify-content: center;
 }
 
-/* Ensure proper layout */
 .stats-group {
   display: flex;
   justify-content: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .stats-group {
     flex-wrap: wrap;
@@ -280,8 +276,6 @@
     height: -50%;
   }
 }
-
-
 
 .hero-section .card h2 {
   font-size: 2rem;
@@ -295,7 +289,12 @@
   color: #F1F0E8;
 }
 
-/* Responsive Design */
+@media (max-width: 767px) {
+  .stats-group {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
   .hero-heading {
     font-size: 2rem;
@@ -309,7 +308,6 @@
     height: auto;
     padding: 3rem 1rem;
   }
-  
 }
 
 @media (max-width: 767px) {
@@ -326,6 +324,7 @@
   }
 }
 
+/* ====== Footer ====== */
 
 .footer {
   background-color: #89A8B2;
@@ -373,7 +372,7 @@
   .footer h6,
   .footer p,
   .footer a {
-    font-size: 0.875rem; /* Adjust font size for small screens */
+    font-size: 0.875rem;
   }
 }
 
@@ -388,13 +387,13 @@ a {
 
 .content-section-1 {
   background: url(../img/contentSection1BG.png) no-repeat center center/contain;
-  position: relative; /* Ensures child elements are positioned relative to this section */
+  position: relative;
   padding-bottom: 8rem;
   color: #F1F0E8;
   background-color: #E7ECEF;
   width: 100vw;
   height: 100vh;
-  display: flex; /* Helps with centering */
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -404,7 +403,7 @@ a {
   width: 100%;
   max-width: 1200px;
   height: auto;
-  position: relative; /* Changed from absolute to relative for better control */
+  position: relative;
   padding: 2rem;
   margin-top: 150px;
 }
@@ -416,8 +415,8 @@ a {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  display: inline-block; /* Ensures proper margin behavior */
-  margin-top: 10px; /* Adjust as needed */
+  display: inline-block;
+  margin-top: 10px;
   text-decoration: none;
 }
 
@@ -428,13 +427,13 @@ a {
 
 @media (max-width: 991px) {
   .content-section-1 {
-    background: none; /* Removes background image on smaller screens */
+    background: none;
     color: #274C77;
     background-color: #E7ECEF;
   }
 
   .content-section-1 .container {
-    text-align: center; /* Center text content on smaller screens */
+    text-align: center;
     left: 0;
     padding: 1rem;
     margin-top: 0px;
