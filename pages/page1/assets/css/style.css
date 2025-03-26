@@ -171,7 +171,7 @@
     margin-top: 1rem;
   }
   
-  .bookAppointment {
+  .login {
     padding: 10px 20px;
     background-color: #274C77;
     color: #F1F0E8;
@@ -182,10 +182,10 @@
     border-radius: 40px;
     font-weight: 500;
     padding: 7px 15px;
-    width: 200px;
+    width: 120px;
   }
   
-  .bookAppointment:hover{
+  .login:hover{
     background-color: #F1F0E8;
     color: #274C77;
   }
@@ -193,6 +193,18 @@
   @media (max-width: 991px) {
     .nav-link.nav-link.active {
         color: #274C77;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .login-link{
+      display: none;
+    }
+  }
+
+  @media (max-width: 991px){
+    .login{
+      display: none;
     }
   }
   
