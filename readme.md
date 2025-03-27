@@ -62,9 +62,12 @@
 Description of the project in details.
 
 Guiding Question:
-**What is the project**<br />
+
+**What is the project**
 Soul Speak Mental Health Advocates is a digital platform aimed at supporting mental health through guided meditations, mood tracking, and access to professional resources.
+
 **Whats the purpose**
+
 **What are key components**<br />
 - A calming and intuitive interface designed for seamless user experience.<br />
 - Guided meditation sessions tailored for different moods and needs.<br />
